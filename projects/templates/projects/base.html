@@ -1,0 +1,43 @@
+<!-- base.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Your Portfolio{% endblock %}</title>
+    <!-- Add your meta tags, stylesheets, and other head content -->
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <!-- Include Bootstrap or other CSS frameworks -->
+</head>
+<body>
+
+<header>
+    <!-- Your header content: logo, site title, etc. -->
+    <h1>Your Portfolio</h1>
+    <nav>
+        <ul>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'projects' %}">Projects</a></li>
+            <!-- Add more navigation links as needed -->
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <div class="container">
+        {% block content %}
+        {% endblock %}
+    </div>
+</main>
+
+<footer>
+    <!-- Your footer content: copyright, links, etc. -->
+    <p>&copy; 2023 Your Portfolio. All rights reserved.</p>
+</footer>
+
+<!-- Add your scripts and JS libraries -->
+<script src="{% static 'js/script.js' %}"></script>
+<!-- Include Bootstrap or other JS frameworks -->
+
+</body>
+</html>

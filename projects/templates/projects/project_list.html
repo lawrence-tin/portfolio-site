@@ -1,0 +1,21 @@
+<!-- projects/templates/projects/project_list.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Projects List</title>
+    <!-- Add necessary CSS or Bootstrap CDN links here -->
+</head>
+<body>
+    <h1>Projects</h1>
+    <ul>
+        {% for project in projects %}
+            <li>
+                <a href="{% url 'project_detail' project.pk %}">
+                    {{ project.title }}
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

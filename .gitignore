@@ -1,0 +1,13 @@
+# Django related
+*.pyc
+*.pyo
+__pycache__
+
+# Secret keys
+.env
+
+# IDE or editor specific files
+.vscode/
+*.sublime-workspace
+*.sublime-project
+1~

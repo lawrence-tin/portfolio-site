@@ -1,0 +1,46 @@
+{% extends 'projects/base.html' %}
+
+{% block title %}Home - Your Portfolio{% endblock %}
+
+{% block content %}
+    <h1>Welcome to My Portfolio</h1>
+
+    <section>
+        <h2>About Me</h2>
+        <p>
+            Hi, I'm [Your Name]. I am a Python developer passionate about automation,
+            web app development, and backend technologies. This is my portfolio showcasing
+            some of my projects.
+        </p>
+    </section>
+
+    <section>
+        <h2>Projects</h2>
+        <div class="categories">
+            <div class="category">
+                <h3>Automation</h3>
+                <ul>
+                    <li><a href="#">Project 1 - Automation</a></li>
+                    <li><a href="#">Project 2 - Automation</a></li>
+                    <!-- Add more Automation project links -->
+                </ul>
+            </div>
+            <div class="category">
+                <h3>Web App Development</h3>
+                <ul>
+                    <li><a href="#">Project 1 - Web App Development</a></li>
+                    <li><a href="#">Project 2 - Web App Development</a></li>
+                    <!-- Add more Web App Development project links -->
+                </ul>
+            </div>
+            <div class="category">
+                <h3>Backend</h3>
+                <ul>
+                    <li><a href="#">Project 1 - Backend</a></li>
+                    <li><a href="#">Project 2 - Backend</a></li>
+                    <!-- Add more Backend project links -->
+                </ul>
+            </div>
+        </div>
+    </section>
+{% endblock %}

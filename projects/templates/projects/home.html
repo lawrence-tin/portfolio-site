@@ -1,44 +1,126 @@
 {% extends 'projects/base.html' %}
 
-{% block title %}Home - Your Portfolio{% endblock %}
+{% block title %}Home - Lawrence Tinago{% endblock %}
 
 {% block content %}
-    <h1>Welcome to My Portfolio</h1>
+    <div class="container mx-auto">
+        <div class="flex flex-wrap">
+            <div class="w-full lg:w-1/2 px-4 flex justify-center items-center">
+                <div>    
+                    <section class="mt-4 text-center">
+                        <h1>Expert In:</h1>
+                        <p>
+                            Backend | Web Apps | Automation
+                        </p>
+                    </section>
+                    <section class="mt-8 text-center">
+                        <!-- Button to Scroll to Projects -->
+                        <a href="#projects-section" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                            View my work
+                        </a>
+                    </section>
+                </div>
+            </div>
+            
+            <!-- Right Side: Photo -->
+            <div class="w-full lg:w-1/4 px-4">
+                <!-- Image Placeholder (Replace with your photo) -->
+                <img src="static/images/law.png" alt="Your Photo" class="w-full h-auto">
+            </div>
+        </div>
+    </div>
 
-    <section>
-        <h2>About Me</h2>
-        <p>
-            Hi, I'm [Your Name]. I am a Python developer passionate about automation,
-            web app development, and backend technologies. This is my portfolio showcasing
-            some of my projects.
-        </p>
-    </section>
 
-    <section>
-        <h2>Projects</h2>
-        <div class="categories">
-            <div class="category">
-                <h3>Automation</h3>
-                <ul>
-                    <li><a href="#">Project 1 - Automation</a></li>
-                    <li><a href="#">Project 2 - Automation</a></li>
-                    <!-- Add more Automation project links -->
+    <!-- Projects Section -->
+    <section id="projects-section" class="mt-8">
+        <h2 class="text-center text-3xl font-semibold mb-6">Projects</h2>
+        
+        <!-- Backend Projects Section -->
+        <div class="bg-gray-200 py-8">
+            <div class="container mx-auto text-center">
+                <h3 class="text-2xl font-semibold mb-4">Backend</h3>
+                <!-- Projects displayed in columns -->
+                <ul class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+                    <!-- Replace with actual project thumbnails and titles -->
+                    <li>
+                        <a href="#">
+                            <img src="static/images/law.png" alt="Backend-1">
+                            <p class="mt-2">Backend-1</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="static/images/law.png" alt="Backend-2">
+                            <p class="mt-2">Backend-2</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="static/images/law.png" alt="Backend-3">
+                            <p class="mt-2">Backend-3</p>
+                        </a>
+                    </li>
+                    <!-- Add more projects -->
                 </ul>
             </div>
-            <div class="category">
-                <h3>Web App Development</h3>
-                <ul>
-                    <li><a href="#">Project 1 - Web App Development</a></li>
-                    <li><a href="#">Project 2 - Web App Development</a></li>
-                    <!-- Add more Web App Development project links -->
+        </div>
+
+        <!-- Web App Development Projects Section -->
+        <div class="bg-gray-300 py-8">
+            <div class="container mx-auto text-center">
+                <h3 class="text-2xl font-semibold mb-4">Web App Development</h3>
+                <!-- Projects displayed in columns -->
+                <ul class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+                    <!-- Replace with actual project thumbnails and titles -->
+                    <!-- ... -->
+                    <li>
+                        <a href="#">
+                            <img src="static/images/law.png" alt="App-1">
+                            <p class="mt-2">App-1</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="static/images/law.png" alt="App-2">
+                            <p class="mt-2">App-2</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="static/images/law.png" alt="App-3">
+                            <p class="mt-2">App-3</p>
+                        </a>
+                    </li>
                 </ul>
             </div>
-            <div class="category">
-                <h3>Backend</h3>
-                <ul>
-                    <li><a href="#">Project 1 - Backend</a></li>
-                    <li><a href="#">Project 2 - Backend</a></li>
-                    <!-- Add more Backend project links -->
+        </div>
+
+        <!-- Automation Projects Section -->
+        <div class="bg-gray-400 py-8">
+            <div class="container mx-auto text-center">
+                <h3 class="text-2xl font-semibold mb-4">Automation</h3>
+                <!-- Projects displayed in columns -->
+                <ul class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+                    <!-- Replace with actual project thumbnails and titles -->
+                    <!-- ... -->
+                    <li>
+                        <a href="#">
+                            <img src="static/images/law.png" alt="Auto-1">
+                            <p class="mt-2">Auto-1</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="static/images/law.png" alt="Auto-2">
+                            <p class="mt-2">Auto-2</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="static/images/law.png" alt="Auto-3">
+                            <p class="mt-2">Auto-3</p>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
